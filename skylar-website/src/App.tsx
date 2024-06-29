@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen w-screen bg-gradient-to-b from-pastelBlue to-pastelPink">
       <h1 className="text-4xl font-medium">Hello, Tailwind!</h1>
     </div>
   );
