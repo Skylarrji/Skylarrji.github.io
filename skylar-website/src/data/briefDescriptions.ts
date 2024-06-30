@@ -5,7 +5,7 @@ export interface BriefDescription {
     articleDesc: string;
 }
 
-export async function fetchBriefDescription(): Promise<BriefDescription> {
+export async function fetchBriefDescriptions(): Promise<BriefDescription> {
     return {
         profilePic: '/profile.jpg',
 
