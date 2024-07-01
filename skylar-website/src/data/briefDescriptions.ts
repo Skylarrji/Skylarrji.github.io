@@ -1,5 +1,6 @@
 export interface BriefDescription {
     profilePic: string;
+    profileDrawingPic: string;
     introDesc: string;
     aboutDesc: string;
     articleDesc: string;
@@ -8,6 +9,8 @@ export interface BriefDescription {
 export async function fetchBriefDescriptions(): Promise<BriefDescription> {
     return {
         profilePic: '/profile.jpg',
+
+        profileDrawingPic: '/profileDrawing.png',
 
         introDesc: 
             `A second year Computer Science student at the University of Waterloo, focusing on Full-stack Development and UI/UX Design.`,

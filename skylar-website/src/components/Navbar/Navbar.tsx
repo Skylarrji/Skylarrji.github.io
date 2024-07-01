@@ -96,7 +96,9 @@ export const Navbar: React.FunctionComponent<any> = ({}) => {
                     color: 'white',
                 }}
             >
-                Skylar Ji
+                <div className="bg-white rounded-full">
+                <img className="w-12 h-12 p-2" src="/favicon.png"></img>
+                </div>
             </a>
             <NavbarContent style={{ flex: 1 }}>
                 <a

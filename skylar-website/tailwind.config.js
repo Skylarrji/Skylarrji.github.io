@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors: {
         white: '#FFFFFF',
-        offWhite: 'EBEEF9',
+        transparentWhite: 'rgba(255, 255, 255, 0.80)',
+        offWhite: '#EBEEF9',
         grey: '#e5e5e5',
         black: '000000',
         pastelPink: '#EC8BCB',
@@ -21,10 +22,9 @@ module.exports = {
           lightBlue: '#DAEBFF',
           outlineBlue: '#72A7E6',
         },
-      }
-
-
+      },
     },
   },
+  
   plugins: [],
 }
