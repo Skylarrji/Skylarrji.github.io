@@ -53,7 +53,7 @@ export async function fetchSkills(): Promise<Skill[]> {
         },
         {
             name: "DevOps",
-            description: "Utilizing tools such as Splunk and Jenkins, I’m able to streamline mean times to recovery and ensure a smooth and efficient CI/CD process.",
+            description: "Utilizing tools such as Splunk and Jenkins, I’m able to optimize mean times to recovery and ensure a smooth and efficient CI/CD process.",
             images: [
                 {
                     name: "Splunk",
