@@ -1,6 +1,6 @@
 import { fetchBriefDescriptions, BriefDescription } from '../data/briefDescriptions';
 import { fetchWorkSummaries, WorkSummary } from '../data/briefWorkSummaries';
-import { fetchSkills, Image, Skill } from '../data/skills';
+import { fetchSkills, Skill } from '../data/skills';
 import { useState, useEffect } from 'react';
 
 const AboutPage = () => {
@@ -33,8 +33,8 @@ const AboutPage = () => {
     return (
         <div className="flex flex-col gap-5">
             <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20">
-                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-1/3">About</h3>
-                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-1/4">Where I’ve Worked</h3>
+                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-1/3 text-white">About</h3>
+                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-1/4 text-white">Where I’ve Worked</h3>
             </div>
 
             <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20 gap-5">
@@ -46,7 +46,7 @@ const AboutPage = () => {
                     {
                         workSummaries?.map((workSummary) => (
                             <div className="flex gap-8">
-                                <img className="w-16 h-16 bg-white rounded-lg" src={workSummary.companyImage}></img>
+                                <img className="min-w-16 max-w-16 min-h-16 max-h-16 bg-white rounded-lg" src={workSummary.companyImage}></img>
                                 <div className="flex flex-col gap-1">
                                     <p className="text-sm text-transparentWhite font-semibold">{workSummary.date}</p>
                                     <div className="flex gap-7">
@@ -62,20 +62,30 @@ const AboutPage = () => {
             </div>
 
             <div className="w-screen flex flex-col items-center gap-5 mt-20">
-                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-full text-center">My Skills</h3>
+                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-full text-center text-white">My Skills</h3>
                 <div className="flex flex-wrap justify-center gap-10">
                     {
                         skills?.map((skill) => (
-                            <div className="bg-white p-8 rounded-lg shadow min-w-[400px] max-w-[400px] min-h[500px] max-h[500px] text-left flex flex-col gap-3">
-                                <h3 className="font-semibold text-blue-dark text-xl">{skill.name}</h3>
-                                <p className="text-md text-blue-grey font-semibold leading-2">{skill.description}</p>
+                            <div className="relative min-w-[400px] max-w-[400px] min-h-[290px] max-h-[290px]">
+                                <div className="bg-offWhite p-8 rounded-lg absolute top-3 left-3 w-full h-full"></div>
+                                <div className="bg-white p-8 rounded-lg relative text-left flex flex-col gap-3">
+                                    <h3 className="font-bold text-blue-dark text-xl">{skill.name}</h3>
+                                    <p className="text-md text-blue-grey font-semibold leading-2">{skill.description}</p>
+                                    <div className="flex gap-3 mt-3">
+                                        {
+                                            skill.images.map((image) => (
+                                                <img className="h-16 bg-white rounded-lg" src={image.url} alt={skill.name} key={image.url}></img>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
                             </div>
                         ))
                     }
                 </div>
             </div>
 
-            <img className="w-screen mt-20" src={'/clouds.svg'}></img>
+            <img className="w-screen mt-10" src={'/clouds.svg'} alt="Clouds"></img>
         </div>
     );
 };
