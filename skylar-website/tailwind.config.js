@@ -12,7 +12,7 @@ module.exports = {
         offWhite: '#EBEEF9',
         grey: '#e5e5e5',
         black: '000000',
-        pastelPink: '#EC8BCB',
+        pastelPurple: '#898EFF',
         pastelBlue: '#71A7E7',
         blue: {
           dark: '#1B4D73',
