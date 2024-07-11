@@ -33,8 +33,8 @@ const AboutPage = () => {
     return (
         <div className="flex flex-col gap-5">
             <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20">
-                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-1/3 text-white">About</h3>
-                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-1/4 text-white">Where I’ve Worked</h3>
+                <h3 className="font-semibold text-3xl mb-4 w-1/3 text-white">About</h3>
+                <h3 className="font-semibold text-3xl mb-4 w-1/4 text-white">Where I’ve Worked</h3>
             </div>
 
             <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20 gap-5">
@@ -62,7 +62,7 @@ const AboutPage = () => {
             </div>
 
             <div className="w-screen flex flex-col items-center gap-5 mt-20">
-                <h3 className="font-semibold lg:text-3xl md:text-2xl sm:text-lg text-base mb-4 w-full text-center text-white">My Skills</h3>
+                <h3 className="font-semibold text-3xl mb-4 w-full text-center text-white">My Skills</h3>
                 <div className="flex flex-wrap justify-center gap-10">
                     {
                         skills?.map((skill) => (

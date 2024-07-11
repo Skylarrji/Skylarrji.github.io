@@ -18,10 +18,7 @@ module.exports = {
           dark: '#1B4D73',
           grey: '#547A96',
         },
-        tag: {
-          lightBlue: '#DAEBFF',
-          outlineBlue: '#72A7E6',
-        },
+        tagBlue: '#72A7E6',
       },
     },
   },

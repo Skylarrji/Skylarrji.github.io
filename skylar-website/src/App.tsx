@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import HomePage from './pages/home.js';
 import AboutPage from './pages/about.js';
 import WorkExperiencePage from './pages/workExperience.js';
+import ProjectsPage from './pages/projects.js';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HomePage />
       <AboutPage />
       <WorkExperiencePage />
+      <ProjectsPage />
     </div>
   );
 }

@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-
-
 interface ContactButtonProps {
     graphic: string;
     url: string | undefined;
