@@ -37,7 +37,7 @@ const AboutPage = () => {
                 <h3 className="font-semibold text-3xl mb-4 w-1/4 text-white">Where I’ve Worked</h3>
             </div>
 
-            <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20 gap-5">
+            <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col justify-center lg:gap-36 md:gap-36 sm:gap-20 gap-5">
                 <div className="w-1/3 flex flex-col gap-24">
                     <p className="font-semibold lg:text-md">{formatText(briefDescriptions?.aboutDesc)}</p>
                 </div>
