@@ -5,6 +5,7 @@ import HomePage from './pages/home.js';
 import AboutPage from './pages/about.js';
 import WorkExperiencePage from './pages/workExperience.js';
 import ProjectsPage from './pages/projects.js';
+import ArticlesPage from './pages/articles.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutPage />
       <WorkExperiencePage />
       <ProjectsPage />
+      <ArticlesPage />
     </div>
   );
 }
