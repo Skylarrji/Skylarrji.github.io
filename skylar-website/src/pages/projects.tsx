@@ -15,17 +15,22 @@ const ProjectsPage = () => {
         <div>
             <div className="w-screen flex flex-col items-center gap-5 mt-20">
                 <h3 className="font-semibold text-3xl w-full text-center text-white">Projects</h3>
-                <p className="font-semibold text-md">Want to know about these projects in more detail? Check out my old site here!</p>
+                <p className="font-semibold text-md w-2/3 text-center">Want to know about these projects in more detail? Check out my old site here!</p>
                 <div className="flex flex-wrap justify-center gap-5 max-w-[1250px]">
                     {projects?.map((project, index) => (
                         <div key={index} className="min-w-[400px] max-w-[400px] p-4">
-                            <div className="bg-white p-8 rounded-lg relative text-left">
-                                <img src={project.image} className="min-w-[300px] max-w-[300px] mb-3 rounded-lg" alt={project.name} />
+                            <div className="min-h-[415px] max-h-[415px] flex flex-col gap-1 bg-white p-8 rounded-lg relative text-left">
+                                <img src={project.image} className="min-w-[300px] max-w-[300px] mb-3 border-grey border-2 rounded-lg" alt={project.name} />
                                 <div className="flex items-center">
                                     <h3 className="font-bold text-blue-dark text-lg">{project.name}</h3>
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="ml-auto">
-                                        <img className="min-w-[22px] max-w-[22px] min-h-[22px] max-h-[22px]" src='/githubBlue.png' alt="GitHub" />
-                                    </a>
+                                    <div className="ml-auto flex gap-5">
+                                        {project.github != "" && <a href={project.github} target="_blank" rel="noopener noreferrer" className="ml-auto">
+                                            <img className="min-w-[22px] max-w-[22px] min-h-[22px] max-h-[22px]" src='/githubBlue.png' alt="GitHub" />
+                                        </a>}
+                                        {project.demoSite != "" && <a href={project.demoSite} target="_blank" rel="noopener noreferrer" className="ml-auto">
+                                            <img className="min-w-[20px] max-w-[20px] min-h-[20px] max-h-[20px]" src='/newTab.png' alt="Demo Site" />
+                                        </a>}
+                                    </div>
                                 </div>
                                 <p className="text-md text-blue-grey font-semibold leading-6 mb-2">{project.description}</p>
                                 <div className="flex flex-wrap gap-1">

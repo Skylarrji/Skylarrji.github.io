@@ -20,6 +20,12 @@ module.exports = {
         },
         tagBlue: '#72A7E6',
       },
+
+      screens: {
+        'sm': '700px',  
+        'md': '940px',
+        'lg': '1430px', 
+      },
     },
   },
   

@@ -14,7 +14,7 @@ export async function fetchProjects(): Promise<Project[]> {
             name: "The Collection",
             description: "A full-stack web application where users can share, upvote and comment on articles that interest them.",
             github: "https://github.com/Skylarrji/the-collection",
-            demoSite: "the-collection-m5s0.onrender.com/",
+            demoSite: "https://the-collection-m5s0.onrender.com/",
             skills: ["React", "Node.js", "Express.js", "MongoDB"],
             image: "/theCollection.gif",
         },
