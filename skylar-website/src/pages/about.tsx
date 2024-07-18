@@ -32,17 +32,21 @@ const AboutPage = () => {
 
     return (
         <div className="flex flex-col gap-5">
-            <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20">
+            {/* <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20">
                 <h3 className="font-semibold text-3xl mb-4 w-1/3 text-white">About</h3>
                 <h3 className="font-semibold text-3xl mb-4 w-1/4 text-white">Where I’ve Worked</h3>
-            </div>
+            </div> */}
 
-            <div className="w-screen flex lg:flex-row md:flex-row sm:flex-row flex-col justify-center lg:gap-36 md:gap-36 sm:gap-20 gap-5">
-                <div className="w-1/3 flex flex-col gap-24">
-                    <p className="font-semibold lg:text-md">{formatText(briefDescriptions?.aboutDesc)}</p>
+            <div className="w-screen flex lg:flex-row md:flex-col sm:flex-col flex-col lg:items-start md:items-center sm:items-center items-center justify-center lg:gap-36 md:gap-10 sm:gap-10 gap-10">
+                <div className="flex sm:items-center lg:items-start max-w-[400px] min-w-[400px] sm:max-w-[400px] sm:min-w-[400px] md:max-w-[400px] md:min-w-[400px] lg:max-w-[565px] lg:min-w-[565px] flex flex-col">
+                    <h3 className="font-semibold text-3xl mb-4 text-white flex lg:justify-start md:justify-start sm:justify-center justify-center ">About</h3>
+                    <p className="font-semibold lg:text-md lg:text-left md:text-center sm:text-center text-center">{formatText(briefDescriptions?.aboutDesc)}</p>
                 </div>
 
-                <div className="w-1/4 flex flex-col gap-5 mb-auto">
+                <div className="flex sm:items-center lg:items-start max-w-[400px] min-w-[400px] sm:max-w-[565px] sm:min-w-[565px] md:max-w-[565px] md:min-w-[565px] lg:max-w-[565px] lg:min-w-[565px] flex flex-col mb-auto">
+                    <h3 className="font-semibold text-3xl mb-4 text-white flex lg:justify-start md:justify-start sm:justify-center justify-center ">Where I’ve Worked</h3>
+                    
+                    <div className="flex flex-col gap-8">
                     {
                         workSummaries?.map((workSummary) => (
                             <div className="flex gap-8">
@@ -58,12 +62,13 @@ const AboutPage = () => {
                             </div>
                         ))
                     }
+                    </div>
                 </div>
             </div>
 
             <div className="w-screen flex flex-col items-center gap-5 mt-20">
                 <h3 className="font-semibold text-3xl mb-4 w-full text-center text-white">My Skills</h3>
-                <div className="flex flex-wrap justify-center gap-10">
+                <div className="flex flex-wrap justify-center gap-10 ml-7 mr-10">
                     {
                         skills?.map((skill) => (
                             <div className="relative min-w-[400px] max-w-[400px] min-h-[290px] max-h-[290px]">
