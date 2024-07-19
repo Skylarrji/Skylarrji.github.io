@@ -84,7 +84,7 @@ export const Navbar: React.FunctionComponent<any> = ({}) => {
     return (
         <div className={styles.navbar}>
             <a
-                href="/"
+                href="/#home"
                 style={{
                     position: 'absolute',
                     left: 0,
@@ -105,9 +105,9 @@ export const Navbar: React.FunctionComponent<any> = ({}) => {
                     className={styles.navbarEntry}
                     style={{
                         fontWeight:
-                            location.pathname == '/' ? '800' : '600',
+                            location.pathname == '/#home' ? '800' : '600',
                     }}
-                    href="/"
+                    href="/#home"
                 >
                     Home
                 </a>

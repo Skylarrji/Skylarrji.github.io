@@ -23,6 +23,7 @@ const WorkExperiencePage = () => {
 
     return (
         <div className="flex flex-col gap-5">
+            <div className="p-16" id="experience"></div>
             <h3 className="font-semibold text-3xl mb-4 text-white text-center">Work Experience</h3>
             
             <div className="flex flex-col gap-24">

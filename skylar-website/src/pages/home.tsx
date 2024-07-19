@@ -18,7 +18,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <>
+        <div id="home">
             <div className="w-screen h-96 flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20 gap-5 mt-28">
                 <img className="lg:block md:block sm:block hidden lg:w-96 md:w-80 sm:w-72 w-80 rounded-xl border border-8 border-white" src={briefDescriptions?.profilePic}></img>
                 <div className="flex flex-col lg:w-1/4 md:w-1/3 sm:w-1/3 w-2/3 lg:gap-7 md:gap-6 sm:gap-5 gap-6">
@@ -35,7 +35,7 @@ const HomePage = () => {
                 </div>
             </div>
             <img className="w-screen mt-20" src={'/clouds.svg'}></img>
-        </>
+        </div>
     );
 };
 

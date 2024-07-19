@@ -13,7 +13,8 @@ const ProjectsPage = () => {
 
     return (
         <div>
-            <div className="w-screen flex flex-col items-center gap-5 mt-20">
+            <div className="p-16" id="projects"></div>
+            <div className="w-screen flex flex-col items-center gap-5">
                 <h3 className="font-semibold text-3xl w-full text-center text-white">Projects</h3>
                 <p className="font-semibold text-md w-2/3 text-center">Want to know about these projects in more detail? Check out my old site here!</p>
                 <div className="flex flex-wrap justify-center gap-5 max-w-[1250px]">
