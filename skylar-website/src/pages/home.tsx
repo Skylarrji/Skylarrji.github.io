@@ -34,7 +34,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <img className="w-screen mt-20" src={'/clouds.svg'}></img>
+            {/* <img className="w-screen mt-20" src={'/clouds.svg'}></img> */}
         </div>
     );
 };

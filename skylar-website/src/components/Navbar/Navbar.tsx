@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 
 const MenuIcon = (props: any) => {
@@ -86,6 +86,7 @@ const NavbarContent: React.FC<NavbarContentProps> = ({ children, style, ...rest 
 type NavbarProps = {
   handleScroll: (ref: React.RefObject<HTMLDivElement>) => void;
   refs: {
+    homeRef: React.RefObject<HTMLDivElement>;
     aboutRef: React.RefObject<HTMLDivElement>;
     experienceRef: React.RefObject<HTMLDivElement>;
     projectsRef: React.RefObject<HTMLDivElement>;
@@ -94,6 +95,37 @@ type NavbarProps = {
 };
 
 export const Navbar: React.FC<NavbarProps> = ({ handleScroll, refs }) => {
+  const [currentSection, setCurrentSection] = useState('');
+
+  useEffect(() => {
+    const handleScrollEvent = () => {
+      const sections = [
+        { id: 'home', ref: refs.homeRef.current },
+        { id: 'about', ref: refs.aboutRef.current },
+        { id: 'experience', ref: refs.experienceRef.current },
+        { id: 'projects', ref: refs.projectsRef.current },
+        { id: 'articles', ref: refs.articlesRef.current },
+      ];
+
+      sections.forEach((section) => {
+        if (section.ref) {
+          const rect = section.ref.getBoundingClientRect();
+          if (rect.bottom > 0 && rect.top < window.innerHeight) {
+            setCurrentSection(section.id);
+          }
+        }
+      });
+      
+    };
+
+    window.addEventListener('scroll', handleScrollEvent);
+    handleScrollEvent(); 
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollEvent);
+    };
+  }, [refs]);
+
   return (
     <div className={styles.navbar}>
       <a
@@ -119,45 +151,50 @@ export const Navbar: React.FC<NavbarProps> = ({ handleScroll, refs }) => {
       </a>
       <NavbarContent style={{ flex: 1 }}>
         <a
-          className={styles.navbarEntry}
+          className={`${styles.navbarEntry} ${currentSection === 'home' ? styles.active : ''}`}
           onClick={(e) => {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll to the top of the page
+            setCurrentSection('home');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
           Home
         </a>
         <a
-          className={styles.navbarEntry}
+          className={`${styles.navbarEntry} ${currentSection === 'about' ? styles.active : ''}`}
           onClick={(e) => {
             e.preventDefault();
+            setCurrentSection('about');
             handleScroll(refs.aboutRef);
           }}
         >
           About
         </a>
         <a
-          className={styles.navbarEntry}
+          className={`${styles.navbarEntry} ${currentSection === 'experience' ? styles.active : ''}`}
           onClick={(e) => {
             e.preventDefault();
+            setCurrentSection('experience');
             handleScroll(refs.experienceRef);
           }}
         >
           Experience
         </a>
         <a
-          className={styles.navbarEntry}
+          className={`${styles.navbarEntry} ${currentSection === 'projects' ? styles.active : ''}`}
           onClick={(e) => {
             e.preventDefault();
+            setCurrentSection('projects');
             handleScroll(refs.projectsRef);
           }}
         >
           Projects
         </a>
         <a
-          className={styles.navbarEntry}
+          className={`${styles.navbarEntry} ${currentSection === 'articles' ? styles.active : ''}`}
           onClick={(e) => {
             e.preventDefault();
+            setCurrentSection('articles');
             handleScroll(refs.articlesRef);
           }}
         >

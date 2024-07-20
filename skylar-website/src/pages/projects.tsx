@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                     ))}
                 </div>
             </div>
-            <img className="w-screen mt-10" src={'/clouds.svg'} alt="Clouds" />
+            {/* <img className="w-screen mt-10" src={'/clouds.svg'} alt="Clouds" /> */}
         </div>
     );
 };
