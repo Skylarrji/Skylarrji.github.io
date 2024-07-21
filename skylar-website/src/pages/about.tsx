@@ -86,7 +86,6 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            {/* <img className="w-screen mt-10" src={'/clouds.svg'} alt="Clouds"></img> */}
         </div>
     );
 };

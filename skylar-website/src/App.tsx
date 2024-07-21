@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import './App.css';
 import NavBar from './components/Navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 import HomePage from './pages/home';

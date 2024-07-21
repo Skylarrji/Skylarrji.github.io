@@ -107,10 +107,10 @@ export const Navbar: React.FC<NavbarProps> = ({ handleScroll, refs }) => {
         { id: 'articles', ref: refs.articlesRef.current },
       ];
 
-      sections.forEach((section) => {
+      sections.forEach((section) => { // goes through each section
         if (section.ref) {
           const rect = section.ref.getBoundingClientRect();
-          if (rect.bottom > 0 && rect.top < window.innerHeight) {
+          if (rect.bottom > 0 && rect.top < window.innerHeight) { // checks if the section ref intersects with the viewport window
             setCurrentSection(section.id);
           }
         }
@@ -134,7 +134,7 @@ export const Navbar: React.FC<NavbarProps> = ({ handleScroll, refs }) => {
           position: 'absolute',
           left: 0,
           top: 0,
-          padding: '1rem',
+          padding: '0.5rem',
           fontSize: '24px',
           fontWeight: '660',
           textTransform: 'none',
