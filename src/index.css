@@ -12,11 +12,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    cursor: url('customCursorMain.png'), auto;
+    cursor: url('/customCursorMain.png'), auto;
   }
 
   a:hover, button:hover {
-    cursor: url('customCursorHover.png'), auto;
+    cursor: url('/customCursorHover.png'), auto;
   }
 
   a {
