@@ -4,6 +4,7 @@ export interface Links {
     gmail: string;
     resume: string;
     medium: string;
+    oldPersonalWebsite: string;
 }
 
 export async function fetchLinks(): Promise<Links> {
@@ -13,5 +14,6 @@ export async function fetchLinks(): Promise<Links> {
         gmail: "mailto:skylarji20045@gmail.com",
         resume: "https://github.com/Skylarrji/resume/blob/main/resume-updated.pdf",
         medium: "https://medium.com/@skylarrji",
+        oldPersonalWebsite: "https://skylarrji.github.io/OldPersonalWebsite/#projects",
     };
 } 

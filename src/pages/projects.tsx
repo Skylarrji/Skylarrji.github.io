@@ -1,13 +1,19 @@
 import { fetchProjects, Project } from '../data/projects';
+import { fetchLinks, Links } from '../data/links';
 import { useState, useEffect } from 'react';
 import Tag from '../components/Tags/Tag';
 
 const ProjectsPage = () => {
     const [projects, setProjects] = useState<Project[] | undefined>();
+    const [links, setLinks] = useState<Links | undefined>();
 
     useEffect(() => {
         fetchProjects().then((data) => {
             setProjects(data);
+        });
+
+        fetchLinks().then((data) => {
+            setLinks(data);
         });
     }, []);
 
@@ -16,7 +22,9 @@ const ProjectsPage = () => {
             <div className="p-16" id="projects"></div>
             <div className="w-screen flex flex-col items-center gap-5">
                 <h3 className="font-semibold text-3xl w-full text-center text-white">Projects</h3>
-                <p className="font-semibold text-md w-2/3 text-center">Want to know about these projects in more detail? Check out my old site here!</p>
+                <p className="font-semibold text-md w-2/3 text-center">Want to know about these projects in more detail?  
+                    <a href={links?.oldPersonalWebsite} target="_blank" rel="noopener noreferrer"> <span className="underline hover:text-grey">Check out my old site here!</span></a>
+                </p>
                 <div className="flex flex-wrap justify-center gap-5 max-w-[1250px]">
                     {projects?.map((project, index) => (
                         <div key={index} className="min-w-[400px] max-w-[400px] p-4">
