@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({ handleScroll, refs }) => {
         </div>
       </a>
         <div className="block">
-          <div className="flex justify-end gap-1 sm:gap-4 md:gap-4 lg:gap-4 mr-4 flex-1">
+          <div className="flex justify-end gap-1 sm:gap-4 md:gap-4 lg:gap-4 sm:mr-4 md:mr-4 lg:mr-4 flex-1">
             <a
               className={`${styles.navbarItem} ${currentSection === 'home' ? styles.active : ''}`}
               onClick={(e) => {
