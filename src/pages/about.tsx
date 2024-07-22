@@ -34,12 +34,12 @@ const AboutPage = () => {
         <div className="flex flex-col gap-5">
             <div className="p-16" id="about"></div>
             <div className="w-screen flex lg:flex-row md:flex-col sm:flex-col flex-col lg:items-start md:items-center sm:items-center items-center justify-center lg:gap-36 md:gap-10 sm:gap-10 gap-10">
-                <div className="flex sm:items-center lg:items-start max-w-[400px] min-w-[400px] sm:max-w-[400px] sm:min-w-[400px] md:max-w-[400px] md:min-w-[400px] lg:max-w-[565px] lg:min-w-[565px] flex flex-col">
+                <div className="flex sm:items-center lg:items-start max-w-[85vw] sm:max-w-[400px] sm:min-w-[400px] md:max-w-[400px] md:min-w-[400px] lg:max-w-[565px] lg:min-w-[565px] flex flex-col">
                     <h3 className="font-semibold text-3xl mb-4 text-white flex lg:justify-start md:justify-start sm:justify-center justify-center ">About</h3>
                     <p className="font-semibold lg:text-md lg:text-left md:text-center sm:text-center text-center">{formatText(briefDescriptions?.aboutDesc)}</p>
                 </div>
 
-                <div className="flex sm:items-center lg:items-start max-w-[400px] min-w-[400px] sm:max-w-[565px] sm:min-w-[565px] md:max-w-[565px] md:min-w-[565px] lg:max-w-[565px] lg:min-w-[565px] flex flex-col mb-auto">
+                <div className="flex sm:items-center lg:items-start max-w-[85vw] sm:max-w-[565px] sm:min-w-[565px] md:max-w-[565px] md:min-w-[565px] lg:max-w-[565px] lg:min-w-[565px] flex flex-col mb-auto">
                     <h3 className="font-semibold text-3xl mb-4 text-white flex lg:justify-start md:justify-start sm:justify-center justify-center ">Where I’ve Worked</h3>
                     
                     <div className="flex flex-col gap-8">
