@@ -67,7 +67,7 @@ const AboutPage = () => {
                 <div className="flex flex-wrap justify-center gap-10 ml-7 mr-10">
                     {
                         skills?.map((skill) => (
-                            <div className="relative lg:min-w-[400px] lg:max-w-[400px] lg:min-h-[290px] lg:max-h-[290px] md:min-w-[400px] md:max-w-[400px] md:min-h-[290px] md:max-h-[290px] sm:min-w-[400px] sm:max-w-[400px] sm:min-h-[290px] sm:max-h-[290px] ">
+                            <div className="relative max-w-[85vw] lg:min-w-[400px] lg:max-w-[400px] lg:min-h-[290px] lg:max-h-[290px] md:min-w-[400px] md:max-w-[400px] md:min-h-[290px] md:max-h-[290px] sm:min-w-[400px] sm:max-w-[400px] sm:min-h-[290px] sm:max-h-[290px] ">
                                 <div className="bg-offWhite p-8 rounded-lg absolute top-3 left-3 w-full h-full"></div>
                                 <div className="bg-white p-8 rounded-lg relative text-left flex flex-col gap-3">
                                     <h3 className="font-bold text-blue-dark text-xl">{skill.name}</h3>

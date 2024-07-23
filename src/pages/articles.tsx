@@ -30,7 +30,7 @@ const ArticlesPage = () => {
         <div>
             <div className="p-16" id="articles"></div>
             <div className="flex justify-center px-24 gap-24 pb-24 items-center sm:text-center md:text-left lg:text-left text-center sm:flex-col md:flex-row lg:flex-row flex-col">
-                <div className="lg:w-1/3 min-w-[85vw]">
+                <div className="lg:min-w-[33vw] lg:max-w-[33vw] md:min-w-[33vw] md:max-w-[33vw] min-w-[85vw]">
                     <h1 className="font-semibold text-3xl mb-5 text-white">Articles</h1>
                     <p className="text-white text-lg mb-8">{formatText(briefDescriptions?.articleDesc)}</p>
                     <div className="flex gap-5 sm:justify-center md:justify-start lg:justify-start justify-center">
