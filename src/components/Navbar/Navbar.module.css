@@ -51,3 +51,10 @@
     }
 }
 
+@media (max-width: 360px) {
+    .navbarItem {
+        font-size: 0.85rem;
+        padding: 0.25rem;
+    }
+}
+
