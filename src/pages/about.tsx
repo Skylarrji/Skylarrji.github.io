@@ -67,15 +67,15 @@ const AboutPage = () => {
                 <div className="flex flex-wrap justify-center gap-10 ml-7 mr-10">
                     {
                         skills?.map((skill) => (
-                            <div className="relative min-w-[400px] max-w-[400px] min-h-[290px] max-h-[290px]">
+                            <div className="relative lg:min-w-[400px] lg:max-w-[400px] lg:min-h-[290px] lg:max-h-[290px] md:min-w-[400px] md:max-w-[400px] md:min-h-[290px] md:max-h-[290px] sm:min-w-[400px] sm:max-w-[400px] sm:min-h-[290px] sm:max-h-[290px] ">
                                 <div className="bg-offWhite p-8 rounded-lg absolute top-3 left-3 w-full h-full"></div>
                                 <div className="bg-white p-8 rounded-lg relative text-left flex flex-col gap-3">
                                     <h3 className="font-bold text-blue-dark text-xl">{skill.name}</h3>
                                     <p className="text-md text-blue-grey font-semibold leading-2">{skill.description}</p>
-                                    <div className="flex gap-3 mt-3">
+                                    <div className="flex flex-wrap gap-3 mt-3">
                                         {
                                             skill.images.map((image) => (
-                                                <img className="h-16 bg-white rounded-lg" src={image.url} alt={skill.name} key={image.url}></img>
+                                                <img className="h-10 sm:h-14 bg-white rounded-lg" src={image.url} alt={skill.name} key={image.url}></img>
                                             ))
                                         }
                                     </div>

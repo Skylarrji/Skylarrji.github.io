@@ -15,7 +15,7 @@
     position: absolute;
     top: -2rem;
     left: -2rem; 
-    width: calc(100% + 2rem); 
+    width: calc(100% + 3rem); 
     height: calc(100% + 3rem); 
     background: #71A7E7;
     filter: blur(20px);
@@ -44,7 +44,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .navbarItem {
         font-size: 1rem;
         padding: 0.25rem;
