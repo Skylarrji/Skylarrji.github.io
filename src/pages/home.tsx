@@ -25,12 +25,12 @@ const HomePage = () => {
                     <h3 className="font-semibold lg:text-xl md:text-lg sm:text-base lg:text-left md:text-left sm:text-left text-center text-lg">Hi! I'm</h3>
                     <h1 className="font-semibold lg:text-6xl md:text-5xl sm:text-5xl lg:text-left md:text-left sm:text-left text-center text-6xl text-white leading-snug">Skylar Ji</h1>
                     <h3 className="font-semibold lg:text-xl md:text-lg sm:text-base lg:text-left md:text-left sm:text-left text-center text-base lg:leading-10">{briefDescriptions?.introDesc}</h3>
-                
+
                     <div className="flex gap-7 lg:justify-start md:justify-start sm:justify-start justify-center">
-                        <ContactButton graphic={"/linkedin.png"} url={links?.linkedin}/>
-                        <ContactButton graphic={"/github.png"} url={links?.github}/>
-                        <ContactButton graphic={"/gmail.png"} url={links?.gmail}/>
-                        <ContactButton graphic={"/resume.png"} url={links?.resume}/>
+                        <ContactButton graphic={"/linkedin.png"} url={links?.linkedin} />
+                        <ContactButton graphic={"/github.png"} url={links?.github} />
+                        <ContactButton graphic={"/gmail.png"} url={links?.gmail} />
+                        <ContactButton graphic={"/resume.png"} url={links?.resume} />
                     </div>
                 </div>
             </div>

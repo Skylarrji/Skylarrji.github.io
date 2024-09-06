@@ -9,6 +9,15 @@ export interface Job {
 export async function fetchJobs(): Promise<Job[]> {
     return [
         {
+            companyName: "Games Institute",
+            role: "UI/UX Designer + Frontend Developer (May - August 2024)",
+            skills: ["React", "Figma", "TypeScript", "Tailwind", "Python", "Go"],
+            description: `
+                As a UI/UX Designer and Frontend Developer for the <a href="https://uwaterloo.ca/games-institute/">Games Institute</a>, I worked with five coworkers to improve the interface of <a href="https://rhetoricon.uwaterloo.ca/"><b>Rhetoricon</b></a> and <a href="https://gofigure.uwaterloo.ca/"><b>GoFigure</b></a>, two research projects led by <a href="https://uwaterloo.ca/english/profiles/randy-harris">Professor Randy Harris</a> regarding tracking instances and their rhetorical figures to be used for <b>natural language processing</b>, including an intuitive annotation highlighting system and global undo/redo functionality.
+            ` ,
+            imageLink: '/rhetoricon.jpeg'
+         },
+        {
            companyName: "Royal Bank of Canada",
            role: "DevOps Engineer (May - August 2023)",
            skills: ["OpenShift", "Splunk", "Jenkins", "Bash", "Agile", "Public Speaking"],

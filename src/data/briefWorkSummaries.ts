@@ -13,7 +13,7 @@ export async function fetchWorkSummaries(): Promise<WorkSummary[]> {
             companyName: 'Games Institute',
             companyImage: '/gamesInstitute.png',
             location: 'Waterloo, ON',
-            role: 'Lead Designer + Developer'
+            role: 'Lead Designer + Frontend Developer'
         },
         {
             date: 'May 2023 - August 2023',

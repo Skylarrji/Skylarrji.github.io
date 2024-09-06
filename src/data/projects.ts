@@ -11,6 +11,14 @@ export interface Project {
 export async function fetchProjects(): Promise<Project[]> {
     return [
         {
+            name: "SnapBird",
+            description: "A mobile application allowing users to identify bird photos and explore a gallery of past identifications.",
+            github: "https://github.com/Skylarrji/snapbird",
+            demoSite: "",
+            skills: ["fast.ai", "React Native", "Django"],
+            image: "/snapBird.png",
+        },
+        {
             name: "The Collection",
             description: "A full-stack web application where users can share, upvote and comment on articles that interest them.",
             github: "https://github.com/Skylarrji/the-collection",
@@ -41,14 +49,6 @@ export async function fetchProjects(): Promise<Project[]> {
             demoSite: "",
             skills: ["React", "Figma"],
             image: "/christmas.png",
-        },
-        {
-            name: "Recipe Adjuster",
-            description: "A graphical interface that allows users to sort and scale their recipe sizes to common desserts with ease.",
-            github: "https://github.com/Skylarrji/recipe_adjuster",
-            demoSite: "",
-            skills: ["Processing (Java)"],
-            image: "/recipe.png",
         },
         {
             name: "Animal Genie",
