@@ -12,7 +12,7 @@ export interface Skill {
 export async function fetchSkills(): Promise<Skill[]> {
     return [
         {
-            name: "UI/UX Desig",
+            name: "UI/UX Design",
             description: "From school projects to work experience and hackathons, I ensure that my designs are not only visually appealing, but also accessible and easy-to-use.",
             images: [
                 {
