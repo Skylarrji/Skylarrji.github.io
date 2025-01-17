@@ -9,7 +9,14 @@ export interface WorkSummary {
 export async function fetchWorkSummaries(): Promise<WorkSummary[]> {
     return [
         {
-            date: 'May 2024 - Present',
+            date: 'January 2025 - Present',
+            companyName: 'Microsoft',
+            companyImage: '/microsoft.png',
+            location: 'Vancouver, BC',
+            role: 'Software Developer - The Coalition'
+        },
+        {
+            date: 'May 2024 - August 2024',
             companyName: 'Games Institute',
             companyImage: '/gamesInstitute.png',
             location: 'Waterloo, ON',
