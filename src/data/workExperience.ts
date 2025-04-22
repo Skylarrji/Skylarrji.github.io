@@ -9,6 +9,15 @@ export interface Job {
 export async function fetchJobs(): Promise<Job[]> {
     return [
         {
+            companyName: "Microsoft",
+            role: "Software Engineer (January - May 2025)",
+            skills: ["React", "TypeScript", "Next.js", "Azure"],
+            description: `
+                As a Software Engineer at Microsoft, I worked with a cross-functional team of six to <b>redesign and implement the homepage</b> of <a href="https://www.thecoalitionstudio.com/">The Coalition's</a> internal developer admin portal that displays the user’s most recently viewed items. I also built a collapsible tree view for console logs to streamline debugging and optimized telemetry initialization using a singleton pattern, <b>reducing redundant API calls by 75% per session.</b> 
+            ` ,
+            imageLink: '/coalitionPhoto.jpeg'
+        },
+        {
             companyName: "Games Institute",
             role: "UI/UX Designer + Frontend Developer (May - August 2024)",
             skills: ["React", "Figma", "TypeScript", "Tailwind", "Python", "Go"],

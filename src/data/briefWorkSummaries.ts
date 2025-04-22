@@ -13,7 +13,7 @@ export async function fetchWorkSummaries(): Promise<WorkSummary[]> {
             companyName: 'Microsoft',
             companyImage: '/microsoft.png',
             location: 'Vancouver, BC',
-            role: 'Software Developer - The Coalition'
+            role: 'Software Engineer'
         },
         {
             date: 'May 2024 - August 2024',
