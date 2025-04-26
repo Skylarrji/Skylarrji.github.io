@@ -39,7 +39,7 @@ export async function fetchJobs(): Promise<Job[]> {
         },
         {
             companyName: "RBC Summer Tech Labs",
-            role: "Innovation Developer (July 2022 - August 2022)",
+            role: "Innovation Developer (July - August 2022)",
             skills: ["React", "FastAPI", "MariaDB", "Agile", "Public Speaking"],
             description: `
                 As an Innovation Developer as part of <a href="https://www.rbc.com/dms/enterprise/futurelaunch/rbc-summer-tech-labs.html">RBC Summer Tech Labs</a>, I worked with three coworkers to develop Lightning Links, an internal secure <b>URL shortener Chrome extension and Slackbot.</b> In the position, I focused on designing and modernizing the user interface after <b>conducting seven user interviews</b> with RBC employees, as well as strengthening backend features for the history page. 
