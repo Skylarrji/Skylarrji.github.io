@@ -9,6 +9,13 @@ export interface WorkSummary {
 export async function fetchWorkSummaries(): Promise<WorkSummary[]> {
     return [
         {
+            date: 'September - December 2025',
+            companyName: 'Shopify',
+            companyImage: '/shopify.png',
+            location: 'Toronto, ON',
+            role: 'Software Engineer'
+        },
+        {
             date: 'January - May 2025',
             companyName: 'Microsoft',
             companyImage: '/microsoft.png',

@@ -13,10 +13,10 @@ export async function fetchBriefDescriptions(): Promise<BriefDescription> {
         profileDrawingPic: '/profileDrawing.png',
 
         introDesc: 
-            `A third year Computer Science student at the University of Waterloo, focusing on Full-stack Development and UI/UX Design.`,
+            `A fourth-year Computer Science student at the University of Waterloo, focusing on Full-stack Development and UI/UX Design.`,
 
         aboutDesc: 
-            `At the core of everything I do, I utilize technology, volunteering, and my own experiences to change how people think about and interact with themselves and those around them.\n\nIn my spare time, I enjoy writing posts on LinkedIn and Medium about my previous life experiences and what I've learned from them, especially topics such as insecurities, rejection, and mental health.\n\nI'm open to giving advice and chatting with new people, so don't hesitate to reach out!`,
+            `At the core of my work, I utilize technology, volunteering, and my own experiences to change how people think about and interact with themselves and those around them.\n\nIn my spare time, I enjoy writing posts on LinkedIn and Medium about my previous life experiences and what I've learned from them, especially topics such as insecurities, rejection, and mental health.\n\nI'm open to giving advice and chatting with new people, so don't hesitate to reach out!`,
     
         articleDesc: 
             `I share key takeaways from my personal experiences in school, work, and other areas of life on LinkedIn and Medium, accompanied with my <b>hand-drawn digital designs.</b>\n\nThese insights are designed to <b>inspire and help you integrate valuable lessons into your life,</b> from navigating university to dealing with hardships and embracing failure.`

@@ -9,6 +9,15 @@ export interface Job {
 export async function fetchJobs(): Promise<Job[]> {
     return [
         {
+            companyName: "Shopify",
+            role: "Software Engineer (September - December 2025)",
+            skills: ["React", "TypeScript", "GraphQL", "Ruby"],
+            description: `
+                As a Software Engineer at <a href="https://www.shopify.com/">Shopify</a>, I worked on the checkout and subscriptions ecosystem, where I <b>migrated the <a href="https://apps.shopify.com/shopify-subscriptions"> Subscriptions Reference App</a> to Polaris Web Components</b> by designing reusable migration patterns adopted across four checkout extensions. This work involved close coordination with <b>five+ cross-functional partners</b> to maintain backward compatibility while unblocking future UI development.
+            `,
+            imageLink: "/shopifyPhoto.png"
+        },
+        {
             companyName: "Microsoft",
             role: "Software Engineer (January - May 2025)",
             skills: ["React", "TypeScript", "Next.js", "Azure"],
@@ -38,7 +47,7 @@ export async function fetchJobs(): Promise<Job[]> {
            imageLink: '/rbcDevops.jpg'
         },
         {
-            companyName: "RBC Summer Tech Labs",
+            companyName: "Royal Bank of Canada - Summer Tech Labs",
             role: "Innovation Developer (July - August 2022)",
             skills: ["React", "FastAPI", "MariaDB", "Agile", "Public Speaking"],
             description: `
