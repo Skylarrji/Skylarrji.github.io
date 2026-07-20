@@ -42,7 +42,7 @@ const ArticlesPage = () => {
         <div className="text-notionGray text-sm font-normal leading-relaxed mb-6 text-center md:text-left [&_strong]:font-normal [&_b]:font-normal">
           {formatText(briefDescriptions?.articleDesc)}
         </div>
-        <div className="flex gap-3 justify-center lg:justify-start">
+        <div className="flex gap-3 justify-center md:justify-start">
           <TextButton text={"Medium"} url={links?.medium} />
           <TextButton text={"LinkedIn"} url={links?.linkedin} />
         </div>

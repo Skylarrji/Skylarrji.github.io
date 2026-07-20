@@ -30,13 +30,14 @@ const WorkExperiencePage = () => {
           Work Experience
         </h2>
 
-        <div className="flex flex-col gap-6 max-w-[680px] mx-auto md:mx-0">
+        <div className="flex flex-wrap gap-4">
           {jobs?.map((job, index) => {
             return (
               <div
                 key={`${job.companyName}-${index}`}
-                className="flex flex-col gap-4 p-5 bg-white border border-notionBorder rounded-lg"
+                className="w-full md:flex-1 md:min-w-[calc(50%-8px)] md:max-w-[calc(50%-8px)]"
               >
+              <div className="h-full flex flex-col gap-4 p-5 bg-white border border-notionBorder rounded-lg hover:shadow-sm transition-shadow">
                 <div className="flex flex-col gap-1.5">
                   <div className="flex items-center gap-3 mb-1">
                     <img
@@ -63,6 +64,7 @@ const WorkExperiencePage = () => {
                 <div className="flex flex-col gap-1 text-notionGray text-xs leading-relaxed">
                   {formatText(job.description)}
                 </div>
+              </div>
               </div>
             );
           })}
