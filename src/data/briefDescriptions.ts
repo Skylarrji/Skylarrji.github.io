@@ -8,7 +8,7 @@ export interface BriefDescription {
 
 export async function fetchBriefDescriptions(): Promise<BriefDescription> {
     return {
-        profilePic: '/profile.png',
+        profilePic: '/profile.jpg',
 
         profileDrawingPic: '/profileDrawing.png',
 

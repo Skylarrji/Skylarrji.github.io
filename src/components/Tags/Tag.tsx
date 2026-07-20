@@ -4,7 +4,7 @@ interface TagProps {
 
 function Tag({ name }: TagProps) {
     return (
-        <div className="text-xs font-medium bg-tagBlue text-white px-3 py-1 rounded-full max-w-fit truncate">
+        <div className="text-xs font-medium bg-notionHover text-notionGray px-2.5 py-0.5 rounded-md max-w-fit truncate border border-notionBorder">
             {name}
         </div>
     );

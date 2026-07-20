@@ -1,4 +1,4 @@
-import { fetchBriefDescriptions, BriefDescription } from '../data/briefDescriptions';
+﻿import { fetchBriefDescriptions, BriefDescription } from '../data/briefDescriptions';
 import { fetchLinks, Links } from '../data/links';
 import { useState, useEffect } from 'react';
 import ContactButton from '../components/Buttons/contactButton';
@@ -18,15 +18,15 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div id="home">
-            <div className="w-screen h-96 flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center lg:gap-36 md:gap-36 sm:gap-20 gap-5 mt-28">
-                <img className="lg:block md:block sm:block hidden lg:w-96 md:w-80 sm:w-72 w-80 rounded-xl border border-8 border-white" src={briefDescriptions?.profilePic}></img>
-                <div className="flex flex-col lg:w-1/4 md:w-1/3 sm:w-1/3 w-2/3 lg:gap-7 md:gap-6 sm:gap-5 gap-6">
-                    <h3 className="font-semibold lg:text-xl md:text-lg sm:text-base lg:text-left md:text-left sm:text-left text-center text-lg">Hi! I'm</h3>
-                    <h1 className="font-semibold lg:text-6xl md:text-5xl sm:text-5xl lg:text-left md:text-left sm:text-left text-center text-6xl text-white leading-snug">Skylar Ji</h1>
-                    <h3 className="font-semibold lg:text-xl md:text-lg sm:text-base lg:text-left md:text-left sm:text-left text-center text-base lg:leading-10">{briefDescriptions?.introDesc}</h3>
+        <div id="home" className="max-w-[960px] mx-auto px-6 py-16">
+            <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-start lg:gap-20 md:gap-16 sm:gap-12 gap-8">
+                <img className="lg:block md:block sm:block hidden lg:w-72 md:w-64 sm:w-56 rounded-xl border border-notionBorder flex-shrink-0" src={briefDescriptions?.profilePic}></img>
+                <div className="flex flex-col lg:gap-5 md:gap-4 sm:gap-4 gap-5">
+                    <p className="text-notionGray font-medium text-xs tracking-widest">Hi! I'm</p>
+                    <h1 className="font-bold lg:text-5xl md:text-4xl sm:text-4xl text-5xl text-notionText leading-tight">Skylar Ji</h1>
+                    <p className="text-notionGray lg:text-base md:text-sm sm:text-sm text-sm leading-relaxed">{briefDescriptions?.introDesc}</p>
 
-                    <div className="flex gap-7 lg:justify-start md:justify-start sm:justify-start justify-center">
+                    <div className="flex gap-3">
                         <ContactButton graphic={"/linkedin.png"} url={links?.linkedin} />
                         <ContactButton graphic={"/github.png"} url={links?.github} />
                         <ContactButton graphic={"/gmail.png"} url={links?.gmail} />

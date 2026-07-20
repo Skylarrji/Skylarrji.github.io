@@ -1,9 +1,10 @@
-export interface Job {
+﻿export interface Job {
     companyName: string;
     role: string;
     skills: string[];
     description: string;
     imageLink: string;
+    logoLink: string;
 }
 
 export async function fetchJobs(): Promise<Job[]> {
@@ -15,16 +16,18 @@ export async function fetchJobs(): Promise<Job[]> {
             description: `
                 As a Software Engineer at <a href="https://www.shopify.com/">Shopify</a>, I worked on the checkout and subscriptions ecosystem, where I <b>migrated the <a href="https://apps.shopify.com/shopify-subscriptions"> Subscriptions Reference App</a> to Polaris Web Components</b> by designing reusable migration patterns adopted across four checkout extensions. This work involved close coordination with <b>five+ cross-functional partners</b> to maintain backward compatibility while unblocking future UI development.
             `,
-            imageLink: "/shopifyPhoto.png"
+            imageLink: "/shopifyPhoto.png",
+            logoLink: "/shopify.png"
         },
         {
             companyName: "Microsoft",
             role: "Software Engineer (January - May 2025)",
             skills: ["React", "TypeScript", "Next.js", "Azure"],
             description: `
-                As a Software Engineer at Microsoft, I worked with a cross-functional team of six to <b>redesign and implement the homepage</b> of <a href="https://www.thecoalitionstudio.com/">The Coalition's</a> internal developer admin portal that displays the user’s most recently viewed items. I also built a collapsible tree view for console logs to streamline debugging and optimized telemetry initialization using a singleton pattern, <b>reducing redundant API calls by 75% per session.</b> 
+                As a Software Engineer at Microsoft, I worked with a cross-functional team of six to <b>redesign and implement the homepage</b> of <a href="https://www.thecoalitionstudio.com/">The Coalition's</a> internal developer admin portal that displays the userâ€™s most recently viewed items. I also built a collapsible tree view for console logs to streamline debugging and optimized telemetry initialization using a singleton pattern, <b>reducing redundant API calls by 75% per session.</b> 
             ` ,
-            imageLink: '/coalitionPhoto.jpeg'
+            imageLink: '/coalitionPhoto.jpeg',
+            logoLink: '/microsoft.png'
         },
         {
             companyName: "Games Institute",
@@ -33,18 +36,20 @@ export async function fetchJobs(): Promise<Job[]> {
             description: `
                 As a UI/UX Designer and Frontend Developer for the <a href="https://uwaterloo.ca/games-institute/">Games Institute</a>, I worked with five coworkers to improve the interface of <a href="https://rhetoricon.uwaterloo.ca/"><b>Rhetoricon</b></a> and <a href="https://gofigure.uwaterloo.ca/"><b>GoFigure</b></a>, two research projects led by <a href="https://uwaterloo.ca/english/profiles/randy-harris">Professor Randy Harris</a> regarding tracking instances and their rhetorical figures to be used for <b>natural language processing</b>, including an intuitive annotation highlighting system and global undo/redo functionality.
             ` ,
-            imageLink: '/rhetoricon.jpeg'
+            imageLink: '/rhetoricon.jpeg',
+            logoLink: '/gamesInstitute.png'
          },
         {
            companyName: "Royal Bank of Canada",
            role: "DevOps Engineer (May - August 2023)",
            skills: ["OpenShift", "Splunk", "Jenkins", "Bash", "Agile", "Public Speaking"],
            description: `
-                        As a Devops Engineer for <a href="https://www.rbc.com/about-rbc.html">RBC</a>, I worked with five coworkers to improve the <b>DORA metrics and CI/CD workflow</b> of the DevOps ecosystem for RBC's mobile apps through Agile sprints.
+                        As a Devops Engineer forÂ <a href="https://www.rbc.com/about-rbc.html">RBC</a>, I worked with five coworkers to improve the <b>DORA metrics and CI/CD workflow</b> of the DevOps ecosystem for RBC's mobile apps through Agile sprints.
 
-                        I also worked with five students to implement, design and <b>pitch an automation solution</b> to a panel of five RBC executives. The solution streamlined meeting synchronization between Sharepoint and Outlook using Microsoft Power Automate for RBC's operating team, resulting in <b>100+ hours saved per week</b> and <b>winning first place</b> in RBC's T&O Case Competition.
+                        I also worked with five students to implement, design and <b>pitch an automation solution</b> to aÂ panel of five RBC executives. The solution streamlined meeting synchronization between Sharepoint and Outlook usingÂ Microsoft Power AutomateÂ for RBC's operating team, resulting inÂ <b>100+ hours saved per week</b>Â and <b>winningÂ first place</b> in RBC's T&O Case Competition.
            ` ,
-           imageLink: '/rbcDevops.jpg'
+           imageLink: '/rbcDevops.jpg',
+           logoLink: '/rbc.svg'
         },
         {
             companyName: "Royal Bank of Canada - Summer Tech Labs",
@@ -55,7 +60,8 @@ export async function fetchJobs(): Promise<Job[]> {
 
                 Our team's efforts earned us the <b>REDD award</b> in week four and the <b>Best Creative Solutions award</b> for our final project pitch that presented to six accomplished RBC executives.
             ` ,
-            imageLink: '/rbcSTL.jpg'
+            imageLink: '/rbcSTL.jpg',
+            logoLink: '/rbc.svg'
          },
 
     ];

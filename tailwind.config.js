@@ -8,23 +8,21 @@ module.exports = {
     extend: {
       colors: {
         white: '#FFFFFF',
-        transparentWhite: 'rgba(255, 255, 255, 0.80)',
-        offWhite: '#EBEEF9',
+        offWhite: '#F7F6F3',
         grey: '#e5e5e5',
         black: '#000000',
-        pastelPurple: '#898EFF',
-        pastelBlue: '#71A7E7',
-        blue: {
-          dark: '#1B4D73',
-          grey: '#547A96',
-        },
-        tagBlue: '#72A7E6',
+        notionBg: '#F7F6F3',
+        notionText: '#37352F',
+        notionGray: '#787774',
+        notionBorder: '#E3E2E0',
+        notionHover: '#EFEFEF',
+        notionAccent: '#2383E2',
       },
 
       screens: {
-        'sm': '700px',  
-        'md': '940px',
-        'lg': '1430px', 
+        'sm': '600px',  
+        'md': '700px',
+        'lg': '1100px', 
       },
     },
   },

@@ -24,34 +24,34 @@ function App() {
   };
 
   return (
-    <div className="w-screen bg-gradient-to-b from-pastelBlue to-pastelPurple">
+    <div className="w-screen bg-notionBg">
       <BrowserRouter>
         <NavBar handleScroll={handleScroll} refs={{ homeRef, aboutRef, experienceRef, projectsRef, articlesRef }} />
       </BrowserRouter>
 
       <div ref={homeRef}>
-      <HomePage />
+        <HomePage />
       </div>
 
-      <img className="w-screen mt-20" src={'/clouds.svg'}></img>
+      <div className="h-px bg-notionBorder mx-auto max-w-[960px] my-12" />
 
       <div ref={aboutRef}>
         <AboutPage />
       </div>
 
-      <img className="w-screen mt-20" src={'/clouds.svg'}></img>
+      <div className="h-px bg-notionBorder mx-auto max-w-[960px] my-12" />
 
       <div ref={experienceRef}>
         <WorkExperiencePage />
       </div>
 
-      <img className="w-screen mt-20" src={'/clouds.svg'}></img>
+      <div className="h-px bg-notionBorder mx-auto max-w-[960px] my-12" />
 
       <div ref={projectsRef}>
         <ProjectsPage />
       </div>
 
-      <img className="w-screen mt-20" src={'/clouds.svg'}></img>
+      <div className="h-px bg-notionBorder mx-auto max-w-[960px] my-12" />
       
       <div ref={articlesRef}>
         <ArticlesPage />

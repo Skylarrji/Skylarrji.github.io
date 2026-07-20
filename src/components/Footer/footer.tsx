@@ -1,19 +1,14 @@
 function Footer() {
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
-    return (
-        <>
-            <div className="flex text-white py-4 mx-auto text-center">
-                <p className="mt-auto text-left lg:ml-10 md:ml-10 sm:ml-10 ml-7 w-full lg:text-md md:text-md sm:text-md text-sm">
-                    Created from scratch using React and Tailwind CSS.
-                </p>
-                <div className="text-right ml-auto w-full mr-7 lg:text-md md:text-md sm:text-md text-sm">
-                    <p>© Copyright {currentYear} Skylar Ji</p>
-                    <p>All rights reserved.</p>
-                </div>
-            </div>
-        </>
-    );
+  return (
+    <div className="border-t border-notionBorder mt-4">
+      <div className="max-w-[960px] mx-auto px-6 py-5 flex items-center justify-between text-notionGray text-xs">
+        <p>Created from scratch using React and Tailwind CSS.</p>
+        <p>© {currentYear} Skylar Ji</p>
+      </div>
+    </div>
+  );
 }
 
 export default Footer;
